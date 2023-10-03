@@ -1,13 +1,21 @@
 package lj.project.test;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
 class TestApplicationTests {
 
 	@Test
-	void contextLoads() {
+	void testA() {
+        String a = "a";
+        assertEquals("a", a);
+	}
+
+	@Test
+	void testB() {
+        String a = "a";
+        assertEquals("b", a);
 	}
 
 }

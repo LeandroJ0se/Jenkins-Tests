@@ -1,4 +1,4 @@
-package lj.project.test.controller;
+package lj.project.test;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
