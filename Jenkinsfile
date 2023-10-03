@@ -11,16 +11,12 @@ pipeline {
         }
         stage("Build") {
             steps {
-                dir("Jenkins-Tests") {
-                    sh "mvn clean install"
-                }
+                sh "mvn clean install"
             }
         }
         stage("Test") {
             steps {
-                dir("Jenkins-Tests") {
-                    sh "mvn test"
-                }
+                sh "mvn test"
             }
         }
     }
