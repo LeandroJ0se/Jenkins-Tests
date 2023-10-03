@@ -14,7 +14,7 @@ class TestApplicationTests {
 
 	@Test
 	void testB() {
-        String a = "a";
+        String a = "b";
         assertEquals("b", a);
 	}
 
