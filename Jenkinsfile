@@ -9,11 +9,6 @@ pipeline {
                 deleteDir()
             }
         }
-        stage("Clone Repo") {
-            steps {
-                sh "git clone https://github.com/LeandroJ0se/Jenkins-Tests.git"
-            }
-        }
         stage("Build") {
             steps {
                 dir("Jenkins-Tests") {
