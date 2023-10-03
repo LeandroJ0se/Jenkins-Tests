@@ -4,19 +4,14 @@ pipeline {
         ansiColor('xterm')
     }
     stages {
-        stage("Clean up") {
+        stage('Build') {
             steps {
-                deleteDir()
+                sh 'mvn clean install'
             }
         }
-        stage("Build") {
+        stage('Test') {
             steps {
-                sh "mvn clean install"
-            }
-        }
-        stage("Test") {
-            steps {
-                sh "mvn test"
+                sh 'mvn test'
             }
         }
     }
