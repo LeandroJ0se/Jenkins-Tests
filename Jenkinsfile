@@ -14,5 +14,10 @@ pipeline {
                 sh 'mvn test'
             }
         }
+        stage('Completed') {
+            steps {
+                echo 'Completed!!!'
+            }
+        }
     }
 }
